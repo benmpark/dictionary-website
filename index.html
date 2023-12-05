@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Definition & Etymology Lookup</title>
+    <meta name="description" content="Look up words' definitions and origins" />
+    <meta name="author" content="Benjamin Park" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="top-part">
+        <h1>Definition &amp; Etymology Lookup</h1>
+        <span id="images">
+          <a href="https://en.wikipedia.org/wiki/Dictionary"
+            ><img
+              src="images/dictionary.jpeg"
+              alt="a large dictionary with a black cover"
+              id="dict"
+          /></a>
+          <a href="https://en.wikipedia.org/wiki/Etymology"
+            ><img
+              src="images/etymology_cloud.png"
+              alt="an etymology word cloud"
+              id="etm-img"
+          /></a>
+        </span>
+        <form id="word-entry">
+          <label for="word">Enter a word (in English) below: </label>
+          <br />
+          <input type="text" id="word" name="word-box" />
+        </form>
+        <button type="submit" form="word-entry">Lookup</button>
+      </div>
+      <div id="definition"></div>
+      <br />
+      <p id="buzzy" style="font-size: small; text-align: center">
+        Looking for
+        <b
+          ><em><span class="small-caps">ENTO</span>mology</em></b
+        >? Buzz on over <a href="https://entsoc.org">here</a>.
+      </p>
+      <img src="images/pngbee.png" alt="a cartoon bee" id="insect" />
+    </div>
+  </body>
+</html>
